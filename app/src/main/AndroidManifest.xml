@@ -3,6 +3,7 @@
     package="com.example.noteapp">
 
     <application
+        android:name=".NoteApp"
         android:allowBackup="true"
         android:fullBackupOnly="true"
         android:icon="@mipmap/ic_launcher"
