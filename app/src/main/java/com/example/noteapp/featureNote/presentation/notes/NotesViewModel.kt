@@ -1,4 +1,4 @@
-package com.example.noteapp.featureNote.presentation.notesList
+package com.example.noteapp.featureNote.presentation.notes
 
 import androidx.compose.runtime.State
 import androidx.compose.runtime.mutableStateOf
@@ -44,7 +44,7 @@ class NotesViewModel @Inject constructor(private val noteUseCases: NoteUseCases)
             }
             is NotesEvent.RestoreNote -> {
                 viewModelScope.launch {
-                    noteUseCases.addNote(recentlyDeletedNote ?: return@launch)
+                    noteUseCases.addNoteUseCase(recentlyDeletedNote ?: return@launch)
                     recentlyDeletedNote = null
                 }
             }

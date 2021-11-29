@@ -1,4 +1,4 @@
-package com.example.noteapp.featureNote.presentation.notesList
+package com.example.noteapp.featureNote.presentation.notes
 
 import com.example.noteapp.featureNote.domain.model.Note
 import com.example.noteapp.featureNote.domain.util.NoteOrder
