@@ -47,7 +47,7 @@ class GetNotesUseCaseTest {
         }
 
     @Test
-    fun `Order notes by title descensing, correct order`() =
+    fun `Order notes by title descending, correct order`() =
         runBlocking {
             val notes = getNotes(NoteOrder.Title(OrderType.Descending)).first()
 
